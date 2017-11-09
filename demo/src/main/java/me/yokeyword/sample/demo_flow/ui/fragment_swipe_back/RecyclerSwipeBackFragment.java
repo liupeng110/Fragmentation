@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
+import me.yokeyword.fragmentation.SwipeBackLayout;
 import me.yokeyword.sample.R;
 import me.yokeyword.sample.demo_flow.adapter.PagerAdapter;
 import me.yokeyword.sample.demo_flow.listener.OnItemClickListener;
@@ -40,6 +41,10 @@ public class RecyclerSwipeBackFragment extends BaseSwipeBackFragment {
     }
 
     private void initView(View view) {
+        getSwipeBackLayout().setEnableGesture(true);
+        getSwipeBackLayout().setParallaxOffset(0.0f );
+        getSwipeBackLayout().setEdgeOrientation(SwipeBackLayout.EDGE_ALL);
+
         mRecy = (RecyclerView) view.findViewById(R.id.recy);
 
         mToolbar = (Toolbar) view.findViewById(R.id.toolbar);

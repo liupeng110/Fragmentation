@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import me.yokeyword.fragmentation.SwipeBackLayout;
 import me.yokeyword.sample.R;
 
 /**
@@ -39,7 +40,9 @@ public class FirstSwipeBackFragment extends BaseSwipeBackFragment {
                 start(RecyclerSwipeBackFragment.newInstance());
             }
         });
-
+        getSwipeBackLayout().setEnableGesture(true);
+        getSwipeBackLayout().setParallaxOffset(0.0f );
+        getSwipeBackLayout().setEdgeOrientation(SwipeBackLayout.EDGE_ALL);
         return attachToSwipeBack(view);
     }
 }

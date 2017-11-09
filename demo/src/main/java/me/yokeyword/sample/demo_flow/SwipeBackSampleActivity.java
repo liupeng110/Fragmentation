@@ -22,7 +22,8 @@ public class SwipeBackSampleActivity extends SwipeBackActivity {
         if (findFragment(FirstSwipeBackFragment.class) == null) {
             loadRootFragment(R.id.fl_container, FirstSwipeBackFragment.newInstance());
         }
-
+        getSwipeBackLayout().setEnableGesture(true);
+        getSwipeBackLayout().setParallaxOffset(0.0f );
         getSwipeBackLayout().setEdgeOrientation(SwipeBackLayout.EDGE_ALL);
     }
 
