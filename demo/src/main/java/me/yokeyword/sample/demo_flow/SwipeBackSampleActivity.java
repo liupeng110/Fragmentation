@@ -12,7 +12,7 @@ import me.yokeyword.sample.demo_flow.ui.fragment_swipe_back.FirstSwipeBackFragme
 /**
  * Created by YoKeyword on 16/4/19.
  */
-public class SwipeBackSampleActivity extends SwipeBackActivity {
+public class  SwipeBackSampleActivity extends SwipeBackActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
